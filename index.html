@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IA2</title>
+
+    <!--Link an external CSS file (this has to be in the head section-->
+    <link rel="stylesheet" href="./css/Style.css" />
+    <script src="./js/Style.js"></script>
+  </head>
+  <body>
+    <header id="page_header">
+      <!-- <main> -->
+      <div>
+        <h3 class="page-heading">
+          Welcome to the Interactive ABCs of CSS Technology learning Website
+        </h3>
+        <h3 class="page-heading2">
+          Click on the buttons below to reveal and learn the CSS technology
+          features of the corresponding letters
+        </h3>
+      </div>
+    </header>
+
+    <div class="buttons">
+      <!-- calculator scren -->
+      <!-- <input type="text" value="" disabled /> -->
+
+      <!-- wrapper for keys of our calc -->
+      <div class="button-keys">
+        <input type="A" class="Button_A" value="A" onclick="showImg1()" />
+        <input type="B" class="Button_B" value="B" onclick="showImg2()" />
+        <input type="C" class="Button_C" value="C" onclick="showImg3()" />
+      </div>
+    </div>
+
+    <div class="img1_box">
+      <img
+        class="img1"
+        src="./css-letter-a.png"
+        alt="css-letter-a"
+        style="visibility: hidden"
+      />
+      <input
+        type="button"
+        class="hide_img1"
+        value="Hide Result"
+        onclick="hideImg1()"
+        style="visibility: hidden"
+      />
+    </div>
+
+    <div class="img2_box">
+      <img
+        class="img2"
+        src="./css-letter-b.png"
+        alt="css-letter-b"
+        style="visibility: hidden"
+      />
+      <input
+        type="button"
+        class="hide_img2"
+        value="Hide Result"
+        onclick="hideImg2()"
+        style="visibility: hidden"
+      />
+    </div>
+
+    <div class="img3_box">
+      <img
+        class="img3"
+        src="./css-letter-c.png"
+        alt="css-letter-c"
+        style="visibility: hidden"
+      />
+      <input
+        type="button"
+        class="hide_img3"
+        value="Hide Result"
+        onclick="hideImg3()"
+        style="visibility: hidden"
+      />
+    </div>
+  </body>
+</html>
